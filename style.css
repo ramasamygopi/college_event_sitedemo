@@ -143,3 +143,46 @@ tr:hover {
     font-size: 0.9rem;
   }
 }
+/* Header styling */
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Logo left, title right */
+  gap: 15px; /* Space between logo and title */
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+/* Logo styling */
+.admin-header .logo {
+  width: 100px; /* adjust size */
+  height: auto;
+  border-radius: 50px 50px 30px 30px ;
+}
+
+/* Title styling */
+.admin-header h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin: 0;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .admin-header .logo {
+    width: 50px;
+  }
+
+  .admin-header h2 {
+    font-size: 1.5rem;
+  }
+}
