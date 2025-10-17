@@ -186,3 +186,131 @@ tr:hover {
     font-size: 1.5rem;
   }
 }
+
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px 0 30px;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Home page links container */
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+
+
+
+/* Body styling */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* deep purple to blue gradient */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 15px;
+  transition: background 0.5s ease;
+}
+
+/* Add subtle animated gradient background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff416c, #ff4b2b);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 50px 0 30px;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  letter-spacing: 1px;
+}
+
+/* Home page links container */
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Individual links styling */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* pink to orange gradient */
+  padding: 12px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+    margin: 30px 10px 20px;
+  }
+  .home-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Back button styling */
+.back-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
