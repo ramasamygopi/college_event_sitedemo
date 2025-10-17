@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Event Registration</h2>
+  <form id="registrationForm">
+    <label>Student Name:</label>
+    <input type="text" name="studentName" required><br><br>
+
+    <label>Select Event:</label>
+    <select name="event" required>
+      <option value="">--Select--</option>
+      <option value="Coding Contest">Coding Contest</option>
+      <option value="Dance">Dance</option>
+      <option value="Quiz">Quiz</option>
+    </select><br><br>
+
+    <label>Team Name:</label>
+    <input type="text" name="teamName" required><br><br>
+
+    <label>Number of Members:</label>
+    <input type="number" id="memberCount" min="1" max="5" value="1"><br><br>
+
+    <div id="membersDiv">
+      <label>Member 1:</label>
+      <input type="text" name="members[]" required><br><br>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
